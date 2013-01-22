@@ -12,14 +12,14 @@ import edu.wpi.first.wpilibj.Jaguar;
  * @author Teacher
  */
 public class RobotParts {
-    //pwm number
+    //Sets the drive PWM from the sidecar as #
     private final static int LDriveP = 5;
     private final static int RDriveP = 4;
     private final static int HopperP = 3;
     private final static int ShooterP = 8;
     private final static int ArmP = 2;
    // private final static int camera = 1;
-    //jags
+    //Declares the Individual Jaguars for later us
     public Jaguar LDrive;
     public Jaguar RDrive;
     public Jaguar Hopper;
@@ -30,6 +30,7 @@ public class RobotParts {
     private static RobotParts partInst;
     
     private RobotParts(){
+        //Creates the jaguar from the last two sections
         LDrive = new Jaguar(LDriveP);
         RDrive = new Jaguar(RDriveP);
         Hopper = new Jaguar(HopperP);
@@ -38,7 +39,7 @@ public class RobotParts {
        // camera = new AxisCamera("192.168.0.90");
     }
     public static RobotParts getInstance(){
-        if(partInst == null)
+        if(partInst == null) //if partInst doesnt exist make it!!
             partInst = new RobotParts();
         return partInst;
     }
