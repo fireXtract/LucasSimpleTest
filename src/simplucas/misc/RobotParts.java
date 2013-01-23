@@ -12,7 +12,7 @@ import edu.wpi.first.wpilibj.Jaguar;
  * @author Teacher
  */
 public class RobotParts {
-    //Sets the drive PWM from the sidecar as #
+    //Sets the drive PWM from the sidecar as # 
     private final static int LDriveP = 5;
     private final static int RDriveP = 4;
     private final static int HopperP = 3;
