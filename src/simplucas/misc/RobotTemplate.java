@@ -23,7 +23,7 @@ public class RobotTemplate extends SimpleRobot {
     /**
      * This function is called once each time the robot enters autonomous mode.
      */
-    //Doubles are like integers but with decimals like 24.22
+    //Doubles are like integers but with decimals like 24.23
     public double LSpeed;
     public double RSpeed;
     //Booleans are either true or false
