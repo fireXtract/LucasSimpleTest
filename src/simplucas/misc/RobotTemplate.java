@@ -8,6 +8,7 @@
 package simplucas.misc;
 
 
+import edu.wpi.first.wpilibj.DriverStationLCD;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.SimpleRobot;
 import edu.wpi.first.wpilibj.Timer;
@@ -75,6 +76,8 @@ public class RobotTemplate extends SimpleRobot {
             backArm = joy1.getRawButton(5);
             
         RobotParts robotParts = RobotParts.getInstance();
+        robotParts.textOutput.println(DriverStationLCD.Line.kUser1, 1, "Lots of words should be printed i hope");
+        robotParts.textOutput.updateLCD();
         
         //Sets the drive values to the speed values from the joystick
         robotParts.LDrive.set(LSpeed*-1);

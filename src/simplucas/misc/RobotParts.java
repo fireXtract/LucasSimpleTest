@@ -4,6 +4,7 @@
  */
 package simplucas.misc;
 
+import edu.wpi.first.wpilibj.DriverStationLCD;
 import edu.wpi.first.wpilibj.Jaguar;
 //import edu.wpi.first.wpilibj.camera.AxisCamera;
 
@@ -26,6 +27,8 @@ public class RobotParts {
     public Jaguar Arm;
     public Jaguar Shooter;
     //public AxisCamera camera;
+    public DriverStationLCD textOutput;
+    
 
     private static RobotParts partInst;
     
@@ -36,6 +39,7 @@ public class RobotParts {
         Hopper = new Jaguar(HopperP);
         Shooter = new Jaguar(ShooterP);
         Arm = new Jaguar(ArmP);
+       textOutput = DriverStationLCD.getInstance();
        // camera = new AxisCamera("192.168.0.90");
     }
     public static RobotParts getInstance(){
