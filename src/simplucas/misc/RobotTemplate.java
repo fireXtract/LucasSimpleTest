@@ -67,7 +67,6 @@ public class RobotTemplate extends SimpleRobot {
             
             //Sets runHopper to the value of the button
             runHopper = joy1.getRawButton(2);
-            
             //Sets runShooter to the value of the trigger also known as Button(1)
             runShooter = joy1.getTrigger();
             
@@ -90,7 +89,8 @@ public class RobotTemplate extends SimpleRobot {
          * : is a compact else statement
          * runHopper? .5 : 0);
          * congrats now you understand a compacted if else statement
-         */
+         */      
+  
         robotParts.Hopper.set(runHopper? .5 : 0);
         robotParts.Arm.set(runArm? 0.90 : 0);
         robotParts.Arm.set(backArm? -0.90 : 0);
