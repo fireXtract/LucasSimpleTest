@@ -75,7 +75,8 @@ public class RobotTemplate extends SimpleRobot {
             backArm = joy1.getRawButton(5);
             
         RobotParts robotParts = RobotParts.getInstance();
-        robotParts.textOutput.println(DriverStationLCD.Line.kUser1, 1, "Lots of words should be printed i hope");
+        robotParts.textOutput.println(DriverStationLCD.Line.kUser2, 1, "be printed i hope");
+        robotParts.textOutput.println(DriverStationLCD.Line.kUser1, 1, "Lots of words should");
         robotParts.textOutput.updateLCD();
         
         //Sets the drive values to the speed values from the joystick
